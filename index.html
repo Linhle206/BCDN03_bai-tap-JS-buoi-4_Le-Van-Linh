@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập buổi 4</title>
+
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bài tập buổi 4</h1>
+    </div>
+
+    <!-- Bài 1 -->
+    <div class="bai1 container">
+        <h2 class="mt-5">Bài tập 1: sắp xếp 3 số nguyên</h2>
+        <form class="w-50 mt-3">
+            <div class="form-group">
+                <label for="num1">Số đầu tiên</label>
+                <input type="number" class="form-control" id="num1" placeholder="Nhập số" />
+            </div>
+            <div class="form-group">
+                <label for="num2">Số thứ 2</label>
+                <input type="number" class="form-control" id="num2" placeholder="Nhập số" />
+            </div>
+            <div class="form-group">
+                <label for="num3">số thứ 3</label>
+                <input type="number" class="form-control" id="num3" placeholder="Nhập số" />
+            </div>
+            <button onclick="xepTT()" type="button" class="btn btn-primary">
+          Sắp xếp
+        </button>
+            <p id="xuatTT" class="alert alert-primary mt-4"></p>
+        </form>
+    </div>
+
+    <!-- Bài 2 -->
+    <div class="container">
+        <h2 class="mt-5">Bài tập 2: Chào hỏi</h2>
+        <select id="thanhvien" class="select d-block mt-4" style="width: 200px">
+        <option value="1">Chọn thành viên</option>
+        <option value="2">Bố</option>
+        <option value="3">Mẹ</option>
+        <option value="4">Anh trai</option>
+        <option value="5">Em gái</option>
+      </select>
+        <button onclick="chao()" id="guiloi" class="btn btn-primary mt-3">
+        gửi lời chào
+      </button>
+        <p id="loichao" class="alert alert-primary mt-4 w-50"></p>
+    </div>
+
+    <!-- Bài 3 -->
+    <div class="bai3 container">
+        <h2 class="mt-5">Bài tập 3: Đếm số chẵn lẽ</h2>
+        <form class="w-50 mt-3">
+            <div class="form-group">
+                <label for="num31">Số đầu tiên</label>
+                <input type="number" class="form-control" id="num31" placeholder="Nhập số" />
+            </div>
+            <div class="form-group">
+                <label for="num32">Số thứ 2</label>
+                <input type="number" class="form-control" id="num32" placeholder="Nhập số" />
+            </div>
+            <div class="form-group">
+                <label for="num33">số thứ 3</label>
+                <input type="number" class="form-control" id="num33" placeholder="Nhập số" />
+            </div>
+            <button onclick="demCL()" type="button" class="btn btn-primary">
+          Đếm
+        </button>
+            <p id="xuatCL" class="alert alert-primary mt-4"></p>
+        </form>
+    </div>
+
+    <!-- Bài 4 -->
+    <div class="bai4 container">
+        <h2 class="mt-5">Bài tập 4: Hình tam giác</h2>
+        <form class="w-50 mt-3">
+            <div class="form-group">
+                <label for="canh1">Cạnh 1</label>
+                <input type="number" class="form-control" id="canh1" placeholder="Nhập chiều dài cạnh số 1" />
+            </div>
+            <div class="form-group">
+                <label for="canh2">Cạnh 2</label>
+                <input type="number" class="form-control" id="canh2" placeholder="Nhập chiều dài cạnh số 2" />
+            </div>
+            <div class="form-group">
+                <label for="canh3">Cạnh 3</label>
+                <input type="number" class="form-control" id="canh3" placeholder="Nhập chiều dài cạnh số 3" />
+            </div>
+            <button onclick="tamgiac()" type="button" class="btn btn-primary">
+          Loại tam giác
+        </button>
+            <p id="tamgiac" class="alert alert-primary mt-4"></p>
+        </form>
+    </div>
+
+    <!-- bs4 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Bài tập 1 -->
+    <script src="./js/baitap1.js"></script>
+    <!-- Bài tập 2 -->
+    <script src="./js/baitap2.js"></script>
+    <!-- Bài tập 3 -->
+    <script src="./js/baitap3.js"></script>
+    <!-- Bài tập 4 -->
+    <script src="./js/baitap4.js"></script>
+</body>
+
+</html>
